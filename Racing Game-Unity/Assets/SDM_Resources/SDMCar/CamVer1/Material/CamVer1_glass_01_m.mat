@@ -1,0 +1,431 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: CamVer1_glass_01_m
+  m_Shader: {fileID: 4800000, guid: f2674076a2918d945b4681dece936e83, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ComplexTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 8dd25d2397f50204a87f4f6cfa55e3fd, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 4132faaf1f2cb0246bbb24bae55825d7, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DiffuseTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 8304c9cb7c4a90348a41eb172b230396, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubePositiveX
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeNegativeX
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubePositiveY
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeNegativeY
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubePositiveZ
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeNegativeZ
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: SeperateLine1
+        second: 10
+      data:
+        first:
+          name: SeperateLine2
+        second: 10
+      data:
+        first:
+          name: _OneReflFront
+        second: .100000001
+      data:
+        first:
+          name: _OneReflSide
+        second: .899999976
+      data:
+        first:
+          name: _OneReflSide2Front
+        second: 10
+      data:
+        first:
+          name: _OneRefrFront
+        second: .5
+      data:
+        first:
+          name: _OneRefrSide
+        second: .800000012
+      data:
+        first:
+          name: _TwoReflFront
+        second: 2
+      data:
+        first:
+          name: _TwoReflSide
+        second: 2.00999999
+      data:
+        first:
+          name: _TwoReflSide2Front
+        second: 10
+      data:
+        first:
+          name: _TwoRefrFront
+        second: .99000001
+      data:
+        first:
+          name: _TwoRefrSide
+        second: 1
+      data:
+        first:
+          name: SeperateLine3
+        second: 10
+      data:
+        first:
+          name: _ThreeReflFront
+        second: .25
+      data:
+        first:
+          name: _ThreeReflSide
+        second: .400000006
+      data:
+        first:
+          name: _ThreeReflSide2Front
+        second: 10
+      data:
+        first:
+          name: _ThreeRefrFront
+        second: .200000003
+      data:
+        first:
+          name: _ThreeRefrSide
+        second: .600000024
+      data:
+        first:
+          name: SeperateLine5
+        second: 10
+      data:
+        first:
+          name: _FiveReflFront
+        second: .100000001
+      data:
+        first:
+          name: _FiveReflSide
+        second: .899999976
+      data:
+        first:
+          name: _FiveReflSide2Front
+        second: 10
+      data:
+        first:
+          name: _FiveRefrFront
+        second: .5
+      data:
+        first:
+          name: _FiveRefrSide
+        second: .800000012
+      data:
+        first:
+          name: SeperateLine6
+        second: 10
+      data:
+        first:
+          name: _SixReflFront
+        second: .5
+      data:
+        first:
+          name: _SixReflSide
+        second: 1
+      data:
+        first:
+          name: _SixReflSide2Front
+        second: 10
+      data:
+        first:
+          name: _SixRefrFront
+        second: .0199999996
+      data:
+        first:
+          name: _SixRefrSide
+        second: .100000001
+      data:
+        first:
+          name: _ShininessTwo
+        second: 10
+      data:
+        first:
+          name: _AmbientAmt
+        second: 0
+      data:
+        first:
+          name: _TrackAmbient
+        second: 1
+      data:
+        first:
+          name: _AnimDis
+        second: 0
+      data:
+        first:
+          name: _AlphaLimit
+        second: .600000024
+      data:
+        first:
+          name: _StrongLineLuminance
+        second: 10
+      data:
+        first:
+          name: _StrongLineWidth
+        second: .0149999997
+      data:
+        first:
+          name: _PlaidLength
+        second: .349999994
+      data:
+        first:
+          name: _PlaidSize
+        second: .0350000001
+      data:
+        first:
+          name: _PlaidEdge
+        second: .00350000011
+      data:
+        first:
+          name: _PlaidLuminance
+        second: 12
+      data:
+        first:
+          name: _LineLength
+        second: .25
+      data:
+        first:
+          name: _LineLuminance
+        second: .100000001
+      data:
+        first:
+          name: _LineLuminance2
+        second: 0
+      data:
+        first:
+          name: _BrightLuminance
+        second: 0
+      data:
+        first:
+          name: _FadeOut
+        second: 0
+      data:
+        first:
+          name: _RefitAmt
+        second: 0
+      data:
+        first:
+          name: _LightIntensity
+        second: 0
+      data:
+        first:
+          name: _ReflLOD
+        second: 0
+      data:
+        first:
+          name: _FadeOutDis
+        second: 0
+      data:
+        first:
+          name: SeperateLine4
+        second: 10
+      data:
+        first:
+          name: _FourReflFront
+        second: .00999999978
+      data:
+        first:
+          name: _FourReflSide
+        second: .100000001
+      data:
+        first:
+          name: _FourReflSide2Front
+        second: 10
+      data:
+        first:
+          name: _FourRefrFront
+        second: 1
+      data:
+        first:
+          name: _FourRefrSide
+        second: 1
+      data:
+        first:
+          name: _WinFrontReflFront
+        second: .0500000007
+      data:
+        first:
+          name: _WinFrontReflSide
+        second: .100000001
+      data:
+        first:
+          name: _WinFrontReflSide2Front
+        second: .00999999978
+      data:
+        first:
+          name: _WinFrontRefrFront
+        second: .899999976
+      data:
+        first:
+          name: _WinFrontRefrSide
+        second: 1
+      data:
+        first:
+          name: _WinSideReflFront
+        second: .100000001
+      data:
+        first:
+          name: _WinSideReflSide
+        second: .200000003
+      data:
+        first:
+          name: _WinSideReflSide2Front
+        second: .00999999978
+      data:
+        first:
+          name: _WinSideRefrFront
+        second: .899999976
+      data:
+        first:
+          name: _WinSideRefrSide
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _OneColor
+        second: {r: .0392156877, g: .0392156877, b: .0392156877, a: 1}
+      data:
+        first:
+          name: _TwoColor
+        second: {r: .0392156877, g: .0392156877, b: .0392156877, a: 1}
+      data:
+        first:
+          name: _ThreeColor
+        second: {r: .0392156877, g: .0392156877, b: .0392156877, a: 1}
+      data:
+        first:
+          name: _FiveColor
+        second: {r: .0392156877, g: .0392156877, b: .0392156877, a: 1}
+      data:
+        first:
+          name: _SixColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Spec2Color
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _StrongLineColor
+        second: {r: .760999978, g: .991999984, b: .518000007, a: 1}
+      data:
+        first:
+          name: _PlaidColor
+        second: {r: .0780000016, g: .446999997, b: .0430000015, a: 1}
+      data:
+        first:
+          name: _LineColor
+        second: {r: .416000009, g: .760999978, b: .379999995, a: 1}
+      data:
+        first:
+          name: _LineColor2
+        second: {r: .416000009, g: .760999978, b: .379999995, a: 1}
+      data:
+        first:
+          name: _BrightColor
+        second: {r: .760999978, g: .991999984, b: .518000007, a: 1}
+      data:
+        first:
+          name: _RefitColor
+        second: {r: .650980413, g: .596957803, b: .377823919, a: 1}
+      data:
+        first:
+          name: _LightDirection
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _FourColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _WinFrontColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _WinSideColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _ColorVector_1
+        second: {r: 2, g: .150000006, b: 2, a: 1}
+      data:
+        first:
+          name: _ColorVector_2
+        second: {r: 1.25, g: .200000003, b: 2, a: .150000006}
+      data:
+        first:
+          name: _ColorVector_3
+        second: {r: 1.25, g: .200000003, b: 2, a: .150000006}

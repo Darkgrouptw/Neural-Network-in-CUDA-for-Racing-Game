@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: sdm_plate
+  m_Shader: {fileID: 4800000, guid: 5d41dbb4f94d9a0458f844b242ec9e00, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 7e7135c4cbedda344836669fe1edfd56, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: -.75}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ComplexTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissiveMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _PaintTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ItashaTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: SeperateLine2
+        second: 10
+      data:
+        first:
+          name: SeperateLine3
+        second: 10
+      data:
+        first:
+          name: _AmbientAmt
+        second: .5
+      data:
+        first:
+          name: _ItashaType
+        second: 0
+      data:
+        first:
+          name: _RefitAmt
+        second: 0
+      data:
+        first:
+          name: SeperateLine1
+        second: 10
+      data:
+        first:
+          name: _ShininessTwo
+        second: 10
+      data:
+        first:
+          name: _TrackAmbient
+        second: 1
+      data:
+        first:
+          name: _LightReflFront
+        second: 0
+      data:
+        first:
+          name: _LightReflSide
+        second: 0
+      data:
+        first:
+          name: _PlasticReflFront
+        second: 0
+      data:
+        first:
+          name: _PlasticReflSide
+        second: 0
+      data:
+        first:
+          name: _EmiDayNight
+        second: 0
+      data:
+        first:
+          name: _ColorFrontRange
+        second: .00999999978
+      data:
+        first:
+          name: _ColorSideRange
+        second: 10
+      data:
+        first:
+          name: _ReflFront
+        second: 0
+      data:
+        first:
+          name: _ReflSide
+        second: 0
+      data:
+        first:
+          name: _ReflFrontRange
+        second: .00999999978
+      data:
+        first:
+          name: _ReflSideRange
+        second: 10
+      data:
+        first:
+          name: _ShininessOne
+        second: 1
+      data:
+        first:
+          name: _DirtyAmt
+        second: 0
+      data:
+        first:
+          name: _EmiAmtFrontDay
+        second: 5
+      data:
+        first:
+          name: _EmiAmtFrontNight
+        second: 5
+      data:
+        first:
+          name: _EmiAmtBackDay
+        second: 5
+      data:
+        first:
+          name: _EmiAmtBackNight
+        second: 5
+      data:
+        first:
+          name: _EmiAmtBackDayBrake
+        second: 5
+      data:
+        first:
+          name: _EmiAmtBackNightBrake
+        second: 5
+      data:
+        first:
+          name: _EmiBrake
+        second: 0
+      data:
+        first:
+          name: _EmiOffset
+        second: 0
+      data:
+        first:
+          name: _CalReflSide
+        second: 0
+      data:
+        first:
+          name: _CalReflFront
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ColorBright
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ColorSide
+        second: {r: .977941155, g: .977941155, b: .977941155, a: 1}
+      data:
+        first:
+          name: _ReflColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Spec1Color
+        second: {r: .91911763, g: .91911763, b: .91911763, a: 0}
+      data:
+        first:
+          name: _Spec2Color
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _AmbientColor
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _RefitColor
+        second: {r: .662699997, g: .537299991, b: .0313999988, a: 1}
+      data:
+        first:
+          name: _DamageAmt
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _DamageExp
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ComplexVector
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _CalColorSide
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _CalColorFront
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _CalReflVector
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ItashaFrontColor
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _ItashaBackColor
+        second: {r: 0, g: 0, b: 1, a: 1}
+      data:
+        first:
+          name: _MainColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ColorVector
+        second: {r: .699999988, g: .100000001, b: .200000003, a: 1}
+      data:
+        first:
+          name: _SpecularColor_1
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecularColor_2
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecularVector
+        second: {r: 1, g: .5, b: 1, a: .5}
