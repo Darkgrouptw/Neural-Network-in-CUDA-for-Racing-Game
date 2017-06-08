@@ -20,10 +20,10 @@ public class CarController : MonoBehaviour
     // 從鍵盤拿出 State
     //[HideInInspector]
     public float brake;                            // 煞車
-    float throttle;                         // 油門
+    public float throttle;                         // 油門
     float throttleInput;                    // 油門Input，只有按煞車會減
     float throttleForDrifting;
-    float steering;
+    public float steering;
     float steerInput;
     float unmodifedSteering;
     float lastShiftTime = -1;
