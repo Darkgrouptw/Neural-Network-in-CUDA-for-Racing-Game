@@ -134,11 +134,6 @@ public class CarCamera : MonoBehaviour
 
     void Awake()
     {
-        if (target == null)
-        {
-            target = GameObject.FindWithTag("Player").transform;
-        }
-
         drivetrainScript = target.GetComponent<Drivetrain>();
         raycastLayers = ~ignoreLayers;
 
