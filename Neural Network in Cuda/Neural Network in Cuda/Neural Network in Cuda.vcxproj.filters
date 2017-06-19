@@ -14,5 +14,6 @@
     <ClInclude Include="TestFunction.cuh">
       <Filter>Test Function</Filter>
     </ClInclude>
+    <ClInclude Include="Sigmoid.cuh" />
   </ItemGroup>
 </Project>

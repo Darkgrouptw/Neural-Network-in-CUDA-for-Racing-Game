@@ -23,7 +23,6 @@
     <ClInclude Include="TestFunction.cuh" />
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="Sigmoid.cu" />
     <CudaCompile Include="TestFunction.cu" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -32,6 +32,7 @@ TestFunctionAPI int* TestCudaFunction(int size)
 	return HostDataArray;
 }
 
+// ´ú¸Õ Free ªº Function
 TestFunctionAPI void TestFreeFunction(int *data)
 {
 	delete[] data;

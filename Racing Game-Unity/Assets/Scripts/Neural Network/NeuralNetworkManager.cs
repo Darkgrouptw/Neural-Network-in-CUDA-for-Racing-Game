@@ -18,5 +18,8 @@ public class NeuralNetworkManager : MonoBehaviour
         for (int i = 0; i < ArrayData.Length; i++)
             Debug.Log("Test Cuda =>" + ArrayData[i]);
         #endregion
+        #region 清除測試
+        NeuralNetworkAPI.TestFreeFunction(ArrayDataPointer);
+        #endregion
     }
 }

@@ -14,5 +14,9 @@ public class NeuralNetworkAPI : MonoBehaviour
     // 測試能不能運行 GPU 程式
     [DllImport("Neural Network in Cuda")]
     public static extern IntPtr TestCudaFunction(int length);
+
+    // 測試 Free Memory
+    [DllImport("Neural Network in Cuda")]
+    public static extern void TestFreeFunction(IntPtr dataArray);
     #endregion
 }
