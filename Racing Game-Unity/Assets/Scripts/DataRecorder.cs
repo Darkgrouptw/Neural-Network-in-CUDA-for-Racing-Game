@@ -112,6 +112,13 @@ public class DataRecorder : MonoBehaviour {
 
         #endregion
         #region Data
+        // 轉換
+        curData.leftHitDis = (curData.leftHitDis == 0) ? 1 : curData.leftHitDis;
+        curData.leftfrontHitDis = (curData.leftfrontHitDis == 0) ? 1 : curData.leftfrontHitDis;
+        curData.frontHitDis = (curData.frontHitDis == 0) ? 1 : curData.frontHitDis;
+        curData.rightfrontHitDis = (curData.rightfrontHitDis == 0) ? 1 : curData.rightfrontHitDis;
+        curData.rightHitDis = (curData.rightHitDis == 0) ? 1 : curData.rightHitDis;
+
         curData.frameNum = curFrame;
         curData.steering = carController.steering;
         curData.throttle = carController.throttle;
