@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sigmoid.cuh" />
+    <ClInclude Include="TestFunction.cuh" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="Sigmoid.cu" />
+    <CudaCompile Include="TestFunction.cu" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C7DF20D2-5CAD-4EE3-9554-AD7A15B9AD5D}</ProjectGuid>
@@ -133,6 +135,9 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
       <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
 copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -155,6 +160,7 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
     </CudaCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
