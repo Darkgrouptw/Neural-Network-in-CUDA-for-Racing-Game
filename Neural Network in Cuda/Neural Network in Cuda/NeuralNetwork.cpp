@@ -10,7 +10,7 @@ NeuralNetwork::NeuralNetwork(int InputSize, int HiddenSize, int OutputSize)
 
 float NeuralNetwork::Compute()
 {
-	return LearningRate;
+	return Momentum;
 }
 
 //////////////////////////////////////////////////////////////////////////

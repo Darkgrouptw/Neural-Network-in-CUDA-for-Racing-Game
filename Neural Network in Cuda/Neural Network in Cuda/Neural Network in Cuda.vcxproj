@@ -23,10 +23,6 @@
     <ClInclude Include="Neuron.h" />
     <ClInclude Include="Sigmoid.cuh" />
     <ClInclude Include="Synapse.h" />
-    <ClInclude Include="TestFunction.cuh" />
-  </ItemGroup>
-  <ItemGroup>
-    <CudaCompile Include="TestFunction.cu" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NeuralNetwork.cpp" />
