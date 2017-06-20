@@ -15,5 +15,13 @@
       <Filter>Test Function</Filter>
     </ClInclude>
     <ClInclude Include="Sigmoid.cuh" />
+    <ClInclude Include="Synapse.h" />
+    <ClInclude Include="Neuron.h" />
+    <ClInclude Include="NeuralNetwork.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Synapse.cpp" />
+    <ClCompile Include="Neuron.cpp" />
+    <ClCompile Include="NeuralNetwork.cpp" />
   </ItemGroup>
 </Project>

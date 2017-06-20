@@ -19,11 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="NeuralNetwork.h" />
+    <ClInclude Include="Neuron.h" />
     <ClInclude Include="Sigmoid.cuh" />
+    <ClInclude Include="Synapse.h" />
     <ClInclude Include="TestFunction.cuh" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="TestFunction.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NeuralNetwork.cpp" />
+    <ClCompile Include="Neuron.cpp" />
+    <ClCompile Include="Synapse.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C7DF20D2-5CAD-4EE3-9554-AD7A15B9AD5D}</ProjectGuid>
