@@ -11,6 +11,6 @@ public class NeuralNetworkManager : MonoBehaviour
 	void Start ()
     {
         NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(3, 4, 2);
-        Debug.Log(NeuralNetworkAPI.Compute(NeuralNetwork));
+        //Debug.Log(NeuralNetworkAPI.Compute(NeuralNetwork));
     }
 }
