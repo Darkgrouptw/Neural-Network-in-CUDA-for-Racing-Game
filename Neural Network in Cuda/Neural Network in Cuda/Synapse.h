@@ -14,5 +14,6 @@ public:
 	Neuron									*InputNeuron;					// 輸入的神經元
 	Neuron									*OuputNeron;					// 輸出的神經元
 	float									Weight;							// 佔有的權重
+	float									WeightDelta;					// 權重的差
 };
 
