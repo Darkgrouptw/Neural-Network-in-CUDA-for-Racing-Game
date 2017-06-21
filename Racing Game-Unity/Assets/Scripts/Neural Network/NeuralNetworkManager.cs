@@ -29,11 +29,12 @@ public class NeuralNetworkManager : MonoBehaviour
     }
     private void OnDisable()
     {
-        NeuralNetworkAPI.ReleaseNeuralNetwork(NeuralNetwork);
+        if(!IsTraining)
+            NeuralNetworkAPI.ReleaseNeuralNetwork(NeuralNetwork);
     }
 
 
-    private void ReadSaveData()
+    private void ReadTrainData()
     {
 
     }
