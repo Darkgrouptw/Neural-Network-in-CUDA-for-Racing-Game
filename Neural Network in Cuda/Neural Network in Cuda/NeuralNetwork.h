@@ -26,7 +26,9 @@ public:
 	void								BackwardPropagate(float *);						// 看跟 Target Value 差多少
 
 	float*								Compute(float *);								// 經過 Weight 跑出的 Output
+	float								ComputeError(float *);							// 計算出差多少
 
+	int									MaxEpochsCount;									// 最多 Train 幾次
 	float								LearningRate;									// 接近解的快慢
 	float								Momentum;										// 前面值影響他的多少的比例
 	float								MinimumError;									// 在這個範圍裡面，就不用在 Train 了

@@ -3,6 +3,7 @@
 NeuralNetwork::NeuralNetwork(int InputSize, int HiddenSize, int OutputSize)
 {
 	// 初始化學習的數值
+	MaxEpochsCount		= 1000;
 	LearningRate		= 0.4f;
 	Momentum			= 0.9f;
 	MinimumError		= 0.01f;
@@ -65,6 +66,15 @@ float* NeuralNetwork::Compute(float* InputValues)
 
 	return outputArray;
 }
+float NeuralNetwork::ComputeError(float *Targets)
+{
+	float Total = 0;
+
+	// 計算 Error
+	for (int i = 0; i < OutputSize; i++)
+		Total += abs(OutputLayer[i]->CalculateError(Targets[i]));
+	return Total;
+}
 
 //////////////////////////////////////////////////////////////////////////
 // 要輸出的 API
@@ -84,7 +94,13 @@ NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int InputSize, int HiddenSi
 	#endif // ! IsDebugMode
 
 	NeuralNetwork *net = new NeuralNetwork(InputSize, HiddenSize, OutputSize);
-	cout << InputSize << endl;
+
+	#ifdef IsDebugMode
+	cout << "======== Neural Network ==========" << endl;
+	cout << "Input Layer  => " << InputSize << endl;
+	cout << "Hidden Layer => " << HiddenSize << endl;
+	cout << "Output Layer => " << OutputSize << endl;
+	#endif
 	return net;
 }
 NeuralNetworkAPI void				ReleaseNeuralNetwork(NeuralNetwork* net)
@@ -99,14 +115,22 @@ NeuralNetworkAPI void				Train(NeuralNetwork *net, DataSet *dataArray, int dataS
 	float error = 1.0f;					// Error 值
 	int EpochsCount = 0;				// 總共做了幾個週期
 
-	while (error > net->MinimumError && EpochsCount < INT_MAX)
+	while (error > net->MinimumError && EpochsCount < net->MaxEpochsCount)
 	{
+		error = 0;
 		for (int i = 0; i < dataSize; i++)
 		{
 			net->ForwardPropagate(dataArray->Values);
 			net->BackwardPropagate(dataArray->Targets);
+
+			error += net->ComputeError(dataArray->Targets);
 		}
 		EpochsCount++;
+		error /= dataSize;
+
+		#ifdef IsDebugMode
+		cout << "第 " << EpochsCount << " 週期\tError =>\t" << error << endl;
+		#endif // IsDebugMode
 	}
 }
 
