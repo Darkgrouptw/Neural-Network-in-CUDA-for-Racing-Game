@@ -7,10 +7,14 @@ Hidden Layer
 Output Layer
 */
 #include "Neuron.h"
+#include <iostream>
+#include <Windows.h>
 #include <vector>
 
 #define  NeuralNetworkAPI _declspec(dllexport)
 using namespace std;
+
+#define IsDebugMode
 
 class NeuralNetwork
 {
@@ -55,7 +59,7 @@ extern "C" NeuralNetworkAPI struct DataSet
 extern "C"
 {
 	NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int, int, int);				// 產生一個 NN 的架構
-	NeuralNetworkAPI void				DeleteNeuralNetwork(NeuralNetwork*);			// 將 Memory 清空
+	NeuralNetworkAPI void				ReleaseNeuralNetwork(NeuralNetwork*);			// 將 Memory 清空
 	NeuralNetworkAPI void				Train(NeuralNetwork *, DataSet *, int);			// 要 Train 的資料
 
 	NeuralNetworkAPI float*				Compute(NeuralNetwork*, float *);				// 經過多個 Layer 之後

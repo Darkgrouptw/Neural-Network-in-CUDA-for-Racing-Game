@@ -136,6 +136,7 @@ public class DataRecorder : MonoBehaviour {
     {
         string filePath = "./Saved_data.csv";
         string delimiter = ",";
+        string Header = "Number,leftHitDis,leftfrontHitDis,frontHitDis,rightfrontHitDis,rightHitDis,steering,throttle,brake\n";
         StringBuilder sBuilder = new StringBuilder();
         for(int i=0; i < data.Count; i++)
         {
@@ -152,7 +153,7 @@ public class DataRecorder : MonoBehaviour {
             };
             sBuilder.AppendLine(string.Join(delimiter, line));
         }
-        File.WriteAllText(filePath, sBuilder.ToString());
+        File.WriteAllText(filePath, Header + sBuilder.ToString());
     }
     /// <summary>
     /// Reset frame state and clear data

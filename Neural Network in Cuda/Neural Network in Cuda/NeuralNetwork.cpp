@@ -71,11 +71,27 @@ float* NeuralNetwork::Compute(float* InputValues)
 //////////////////////////////////////////////////////////////////////////
 NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int InputSize, int HiddenSize, int OutputSize)
 {
+	#ifdef  IsDebugMode
+	AllocConsole();
+
+	//SetConsoleTitle("Neural Network");
+	SetConsoleTitle("========== Neural Network Debug 視窗 ==========");				// 設定視窗 Title
+
+	// 把 std 的相關東西，指到視窗上面
+	freopen("conin$", "r", stdin);													
+	freopen("conout$", "w", stdout);
+	freopen("conout$", "w", stderr);
+	#endif // ! IsDebugMode
+
 	NeuralNetwork *net = new NeuralNetwork(InputSize, HiddenSize, OutputSize);
+	cout << InputSize << endl;
 	return net;
 }
-NeuralNetworkAPI void				DeleteNeuralNetwork(NeuralNetwork* net)
+NeuralNetworkAPI void				ReleaseNeuralNetwork(NeuralNetwork* net)
 {
+	#ifdef  IsDebugMode
+	FreeConsole();
+	#endif // ! IsDebugMode
 	delete net;
 }
 NeuralNetworkAPI void				Train(NeuralNetwork *net, DataSet *dataArray, int dataSize)
