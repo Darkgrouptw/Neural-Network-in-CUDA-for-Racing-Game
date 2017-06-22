@@ -121,7 +121,6 @@ public class Wheel : MonoBehaviour
     // 曲線的 Curve
     [HideInInspector]
     public CurveManager CurveM;
-    private float lastVelorty = -100;
 
     // 畫線的 render (彈簧力， 縱向力， 側向力)
     //public GameObject lineGameObject;
@@ -261,20 +260,6 @@ public class Wheel : MonoBehaviour
         return totalForce;
     }
 
-    void Update()
-    {
-        /*
-        switch(Application.platform)
-        {
-            case RuntimePlatform.WindowsEditor:
-                // 畫 Curve
-                CurveM.CurveArray[idx_ * 2].AddPoint(Mathf.Abs(slipRatio), CurveM.LongForceCurve.Evaluate(Mathf.Abs(slipRatio)));              // 畫縱向力
-                CurveM.CurveArray[idx_ * 2 + 1].AddPoint(Mathf.Abs(slipAngle), CurveM.LateralForceCurve.Evaluate(Mathf.Abs(slipAngle)));       // 畫側向力
-                break;
-        }
-        */
-    }
-
     void FixedUpdate()
     {
         Vector3 pos = transform.position;
@@ -300,22 +285,7 @@ public class Wheel : MonoBehaviour
         compression = Mathf.Clamp01(compression);
         rotation += angularVelocity * Time.deltaTime;
         if (model != null)
-        {
-            //model.transform.localPosition = Vector3.up * (compression - 1.0f) * suspensionTravel;
             model.transform.localRotation = Quaternion.Euler(Mathf.Rad2Deg * rotation, maxSteeringAngle * steering * driftSteeringFactor, 0);
-        }
-
-        // Vector3[] vertices = new Vector3[2];
-
-        // vertices[0] = transform.position;
-        // vertices[1] = transform.position + transform.forward * Vector3.Dot(roadForce, transform.forward) / 1000;
-        // lineRender[1].SetVertexCount(vertices.Length);
-        // lineRender[1].SetPositions(vertices);
-
-        // vertices[1] = transform.position + transform.right * Vector3.Dot(roadForce, transform.right) / 1000;
-
-        // lineRender[2].SetVertexCount(vertices.Length);
-        // lineRender[2].SetPositions(vertices);
     }
 
     void ExtraSuspensionForce()
@@ -353,23 +323,6 @@ public class Wheel : MonoBehaviour
             suspensionForce_ = SuspensionForce();
 
             roadForce_ = RoadForce();
-
-            Vector3[] vertices = new Vector3[2];
-
-            // vertices[0] = transform.position;
-            // vertices[1] = transform.position + roadForce_ / 1000;
-            // lineRender[2].SetVertexCount(vertices.Length);
-            // lineRender[2].SetPositions(vertices);
-
-            // vertices[0] = transform.position;
-            // vertices[1] = transform.position + transform.forward * Vector3.Dot(roadForce_, transform.forward) / 1000;
-            // lineRender[1].SetVertexCount(vertices.Length);
-            // lineRender[1].SetPositions(vertices);
-
-            // vertices[1] = transform.position + transform.right * Vector3.Dot(roadForce_, transform.right) / 1000;
-
-            // lineRender[2].SetVertexCount(vertices.Length);
-            // lineRender[2].SetPositions(vertices);
         }
     }
     public void CustomFixedUpdateGround()

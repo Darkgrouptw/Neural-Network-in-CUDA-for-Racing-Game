@@ -4,12 +4,13 @@ Neuron::Neuron()
 {
 	srand(time(0));
 	Bias = GetRandom();
+	BiasDelta = 0;
 }
-
 Neuron::Neuron(vector<Neuron *> lastLayer)
 {
 	srand(time(0));
 	Bias = GetRandom();
+	BiasDelta = 0;
 
 	// 加上連接的關係
 	for (int i = 0; i < lastLayer.size(); i++)
@@ -35,7 +36,7 @@ void Neuron::CalculateValue()
 		Total += InputSynapse[i]->Weight * InputSynapse[i]->InputNeuron->Value;
 
 	// Sigmoid Function
-	Value = Sigmoid::Calc(Total);
+	Value = Sigmoid::Calc(Total + Bias);
 }
 void Neuron::CalculateGradient()
 {
@@ -72,5 +73,6 @@ float Neuron::CalculateError(float target)
 float Neuron::GetRandom()
 {
 	// 輸出 -1 ~ 1 
-	return 2.0f * rand() / RAND_MAX - 1;
+	//return 2.0f * rand() / RAND_MAX - 1;
+	return 0;
 }

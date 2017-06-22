@@ -78,7 +78,10 @@ public class NeuralNetworkManager : MonoBehaviour
 
     public float[] Compute(float[] Values)
     {
-        return NeuralNetworkAPI.Compute(NeuralNetwork, Values);
+        IntPtr DataPointer = NeuralNetworkAPI.Compute(NeuralNetwork, Values);
+        float[] ReturnFloatArray = new float[3];
+        Marshal.Copy(DataPointer, ReturnFloatArray, 0, 3);
+        return ReturnFloatArray;
     }
     public void ReleaseCompute(float[] Values)
     {

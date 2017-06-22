@@ -60,18 +60,12 @@ void NeuralNetwork::BackwardPropagate(float *targets)
 
 float* NeuralNetwork::Compute(float* InputValues)
 {
-	cout << "Output =>";
-
 	// 先經過每個 Weight
 	ForwardPropagate(InputValues);
 
 	float *outputArray = new float[OutputSize];
 	for (int i = 0; i < OutputSize; i++)
-	{
 		outputArray[i] = OutputLayer[i]->Value;
-		cout << OutputLayer[i]->Value;
-	}
-	cout << endl;
 
 	return outputArray;
 }
@@ -119,6 +113,7 @@ NeuralNetworkAPI void				ReleaseNeuralNetwork(NeuralNetwork* net)
 	#endif // ! IsDebugMode
 	delete net;
 }
+
 NeuralNetworkAPI void				Train(NeuralNetwork *net, DataSet *dataArray, int dataSize)
 {
 	float error = 1.0f;					// Error 值
@@ -133,7 +128,6 @@ NeuralNetworkAPI void				Train(NeuralNetwork *net, DataSet *dataArray, int dataS
 			net->BackwardPropagate(dataArray->Targets);
 
 			error += net->ComputeError(dataArray->Targets);
-			cout << i << "\t" << error << endl;
 		}
 		EpochsCount++;
 		error /= dataSize;
