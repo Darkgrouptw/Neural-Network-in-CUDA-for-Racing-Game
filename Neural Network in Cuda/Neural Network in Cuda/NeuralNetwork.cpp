@@ -3,7 +3,7 @@
 NeuralNetwork::NeuralNetwork(int InputSize, int HiddenSize, int OutputSize)
 {
 	// 初始化學習的數值
-	MaxEpochsCount		= 1000;
+	MaxEpochsCount		= 10;
 	LearningRate		= 0.4f;
 	Momentum			= 0.9f;
 	MinimumError		= 0.01f;
@@ -53,16 +53,25 @@ void NeuralNetwork::BackwardPropagate(float *targets)
 	// 根據 Learning Rate & Momentum，來更新 Weight
 	for (int i = 0; i < HiddenSize; i++)
 		HiddenLayer[i]->UpdateWeights(LearningRate, Momentum);
+
+	for (int i = 0; i < OutputSize; i++)
+		OutputLayer[i]->UpdateWeights(LearningRate, Momentum);
 }
 
 float* NeuralNetwork::Compute(float* InputValues)
 {
+	cout << "Output =>";
+
 	// 先經過每個 Weight
 	ForwardPropagate(InputValues);
 
 	float *outputArray = new float[OutputSize];
 	for (int i = 0; i < OutputSize; i++)
+	{
 		outputArray[i] = OutputLayer[i]->Value;
+		cout << OutputLayer[i]->Value;
+	}
+	cout << endl;
 
 	return outputArray;
 }
@@ -124,6 +133,7 @@ NeuralNetworkAPI void				Train(NeuralNetwork *net, DataSet *dataArray, int dataS
 			net->BackwardPropagate(dataArray->Targets);
 
 			error += net->ComputeError(dataArray->Targets);
+			cout << i << "\t" << error << endl;
 		}
 		EpochsCount++;
 		error /= dataSize;

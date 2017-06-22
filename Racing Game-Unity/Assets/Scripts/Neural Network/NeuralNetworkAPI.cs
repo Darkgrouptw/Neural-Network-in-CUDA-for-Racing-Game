@@ -55,12 +55,12 @@ public class NeuralNetworkAPI : MonoBehaviour
     /// <param name="InputValues">輸入的值</param>
     /// <returns>傳出 Output 的資料</returns>
     [DllImport("Neural Network in Cuda")]
-    public static extern int[] Compute(IntPtr net, int[] InputValues);
+    public static extern float[] Compute(IntPtr net, float[] InputValues);
 
     /// <summary>
     /// 將輸出的值清空
     /// </summary>
     /// <param name="InputValues">輸入的值</param>
     [DllImport("Neural Network in Cuda")]
-    public static extern void ReleaseCompute(int[] InputValues);
+    public static extern void ReleaseCompute(float[] InputValues);
 }

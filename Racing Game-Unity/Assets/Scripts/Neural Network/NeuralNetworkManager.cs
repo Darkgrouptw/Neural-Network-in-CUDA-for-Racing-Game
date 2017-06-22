@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using System.IO;
 
+[RequireComponent(typeof(NeuralNetworkCarController))]
 public class NeuralNetworkManager : MonoBehaviour
 {
     [Header("========== Neural Network 相關 ==========")]
@@ -30,7 +31,6 @@ public class NeuralNetworkManager : MonoBehaviour
             NeuralNetworkAPI.Train(NeuralNetwork, DataSetArray.ToArray(), DataSetArray.Count);
         }
     }
-
 
     private void OnDisable()
     {
@@ -73,6 +73,16 @@ public class NeuralNetworkManager : MonoBehaviour
             DataSetArray.Add(tempDataSet);
         }
         return true;
+    }
+
+
+    public float[] Compute(float[] Values)
+    {
+        return NeuralNetworkAPI.Compute(NeuralNetwork, Values);
+    }
+    public void ReleaseCompute(float[] Values)
+    {
+        NeuralNetworkAPI.ReleaseCompute(Values);
     }
 
 }

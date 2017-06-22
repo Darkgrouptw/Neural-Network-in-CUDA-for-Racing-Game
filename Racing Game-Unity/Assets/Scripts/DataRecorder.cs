@@ -34,7 +34,6 @@ public class DataRecorder : MonoBehaviour {
         #region initializing
         curData = new Data();
         #endregion
-
         #region RayCast
         //left
         leftDir = this.transform.parent.right * -1/*this.transform.parent.worldToLocalMatrix.MultiplyVector(this.transform.parent.right)*/;
