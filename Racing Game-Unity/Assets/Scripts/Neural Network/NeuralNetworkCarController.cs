@@ -149,8 +149,6 @@ public class NeuralNetworkCarController : MonoBehaviour
         throttle = Data[1];
         brake = Data[2];
 
-        //NNManger.ReleaseCompute(Data);
-
         // Apply inputs
         foreach (Wheel w in wheels)
         {

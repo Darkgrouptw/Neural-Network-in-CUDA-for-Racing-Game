@@ -142,7 +142,3 @@ NeuralNetworkAPI float*				Compute(NeuralNetwork* net, float *InputValues)
 {
 	return net->Compute(InputValues);
 }
-NeuralNetworkAPI void				ReleaseCompute(float *InputValues)
-{
-	delete[] InputValues;
-}

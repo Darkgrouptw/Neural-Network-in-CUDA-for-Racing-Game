@@ -23,6 +23,8 @@ public class DataRecorder : MonoBehaviour {
 
     private Vector3 leftDir, leftfrontDir, frontDir, rightfrontDir, rightDir;
     private RaycastHit leftHit, leftfrontHit, frontHit, rightfrontHit, rightHit;
+    private const int RayLength = 200;
+
     // Use this for initialization
     void Start () {
         data = new List<Data>();
@@ -36,78 +38,74 @@ public class DataRecorder : MonoBehaviour {
         #endregion
         #region RayCast
         //left
-        leftDir = this.transform.parent.right * -1/*this.transform.parent.worldToLocalMatrix.MultiplyVector(this.transform.parent.right)*/;
+        leftDir = this.transform.parent.right * -1;
         Ray leftRay = new Ray( this.transform.position, leftDir);
-        if (Physics.Raycast(leftRay, out leftHit, 10f))
+        if (Physics.Raycast(leftRay, out leftHit, RayLength))
         {
             if (leftHit.collider.tag != "Player") {
                 //set data
-                Debug.DrawLine(this.transform.position, this.transform.position + leftDir * 10, Color.blue, Time.deltaTime, true);
-                curData.leftHitDis = Vector3.Distance(this.transform.position, leftHit.point)/10f;
+                Debug.DrawLine(this.transform.position, this.transform.position + leftDir * RayLength, Color.blue, Time.deltaTime, true);
+                curData.leftHitDis = Vector3.Distance(this.transform.position, leftHit.point) / RayLength;
             }
-            else { Debug.DrawLine(this.transform.position, this.transform.position + leftDir * 10, Color.red, Time.deltaTime, true); }
+            else { Debug.DrawLine(this.transform.position, this.transform.position + leftDir * RayLength, Color.red, Time.deltaTime, true); }
         }
-        else { Debug.DrawLine(this.transform.position, this.transform.position + leftDir * 10, Color.green, Time.deltaTime, true); }
+        else { Debug.DrawLine(this.transform.position, this.transform.position + leftDir * RayLength, Color.green, Time.deltaTime, true); }
 
         //left front
-        leftfrontDir = Vector3.Lerp(this.transform.parent.right * -1, this.transform.parent.forward, 0.5f);
-        //leftfrontDir = this.transform.parent.worldToLocalMatrix.MultiplyVector(Vector3.Lerp(Vector3.left, Vector3.forward, 0.5f));
+        leftfrontDir = Vector3.Lerp(this.transform.parent.right * -1, this.transform.parent.forward, 0.5f);;
         Ray leftfrontRay = new Ray(this.transform.position, leftfrontDir);
-        if (Physics.Raycast(leftfrontRay, out leftfrontHit, 10f))
+        if (Physics.Raycast(leftfrontRay, out leftfrontHit, RayLength))
         {
             if (leftfrontHit.collider.tag != "Player") {
                 //set data
-                Debug.DrawLine(this.transform.position, this.transform.position + leftfrontDir * 10, Color.blue, Time.deltaTime, true);
-                curData.leftfrontHitDis = Vector3.Distance(this.transform.position, leftfrontHit.point) / 10f;
+                Debug.DrawLine(this.transform.position, this.transform.position + leftfrontDir * RayLength, Color.blue, Time.deltaTime, true);
+                curData.leftfrontHitDis = Vector3.Distance(this.transform.position, leftfrontHit.point) / RayLength;
             }
-            else { Debug.DrawLine(this.transform.position, this.transform.position + leftfrontDir * 10, Color.red, Time.deltaTime, true); }
+            else { Debug.DrawLine(this.transform.position, this.transform.position + leftfrontDir * RayLength, Color.red, Time.deltaTime, true); }
         }
-        else { Debug.DrawLine(this.transform.position, this.transform.position + leftfrontDir * 10, Color.green, Time.deltaTime, true); }
+        else { Debug.DrawLine(this.transform.position, this.transform.position + leftfrontDir * RayLength, Color.green, Time.deltaTime, true); }
 
         //front
         frontDir = this.transform.parent.forward;
-        //frontDir = this.transform.parent.worldToLocalMatrix.MultiplyVector(Vector3.forward);
         Ray frontRay = new Ray(this.transform.position, frontDir);
-        if (Physics.Raycast(frontRay, out frontHit, 10f))
+        if (Physics.Raycast(frontRay, out frontHit, RayLength))
         {
             if (frontHit.collider.tag != "Player") {
                 //set data
-                Debug.DrawLine(this.transform.position, this.transform.position + frontDir * 10, Color.blue, Time.deltaTime, true);
-                curData.frontHitDis = Vector3.Distance(this.transform.position, frontHit.point) / 10f;
+                Debug.DrawLine(this.transform.position, this.transform.position + frontDir * RayLength, Color.blue, Time.deltaTime, true);
+                curData.frontHitDis = Vector3.Distance(this.transform.position, frontHit.point) / RayLength;
             }
-            else { Debug.DrawLine(this.transform.position, this.transform.position + frontDir * 10, Color.red, Time.deltaTime, true); }
+            else { Debug.DrawLine(this.transform.position, this.transform.position + frontDir * RayLength, Color.red, Time.deltaTime, true); }
         }
-        else { Debug.DrawLine(this.transform.position, this.transform.position + frontDir * 10, Color.green, Time.deltaTime, true); }
+        else { Debug.DrawLine(this.transform.position, this.transform.position + frontDir * RayLength, Color.green, Time.deltaTime, true); }
 
         //right front
         rightfrontDir = Vector3.Lerp(this.transform.parent.forward, this.transform.parent.right, 0.5f);
-        //rightfrontDir = this.transform.parent.worldToLocalMatrix.MultiplyVector(Vector3.Lerp(Vector3.forward, Vector3.right, 0.5f));
         Ray rightfrontRay = new Ray(this.transform.position, rightfrontDir);
-        if (Physics.Raycast(rightfrontRay, out rightfrontHit, 10f))
+        if (Physics.Raycast(rightfrontRay, out rightfrontHit, RayLength))
         {
             if (rightfrontHit.collider.tag != "Player") {
                 //set data
-                Debug.DrawLine(this.transform.position, this.transform.position + rightfrontDir * 10, Color.blue, Time.deltaTime, true);
-                curData.rightfrontHitDis = Vector3.Distance(this.transform.position, rightfrontHit.point) / 10f;
+                Debug.DrawLine(this.transform.position, this.transform.position + rightfrontDir * RayLength, Color.blue, Time.deltaTime, true);
+                curData.rightfrontHitDis = Vector3.Distance(this.transform.position, rightfrontHit.point) / RayLength;
             }
-            else { Debug.DrawLine(this.transform.position, this.transform.position + rightfrontDir * 10, Color.red, Time.deltaTime, true); }
+            else { Debug.DrawLine(this.transform.position, this.transform.position + rightfrontDir * RayLength, Color.red, Time.deltaTime, true); }
         }
-        else { Debug.DrawLine(this.transform.position, this.transform.position + rightfrontDir * 10, Color.green, Time.deltaTime, true); }
+        else { Debug.DrawLine(this.transform.position, this.transform.position + rightfrontDir * RayLength, Color.green, Time.deltaTime, true); }
 
         //right
         rightDir = this.transform.parent.right;
-        //rightDir = this.transform.parent.worldToLocalMatrix.MultiplyVector(Vector3.right);
         Ray rightRay = new Ray(this.transform.position, rightDir);
-        if (Physics.Raycast(rightRay, out rightHit, 10f))
+        if (Physics.Raycast(rightRay, out rightHit, RayLength))
         {
             if (rightHit.collider.tag != "Player") {
                 //set data
-                Debug.DrawLine(this.transform.position, this.transform.position + rightDir * 10, Color.blue, Time.deltaTime, true);
-                curData.rightHitDis = Vector3.Distance(this.transform.position, rightHit.point) / 10f;
+                Debug.DrawLine(this.transform.position, this.transform.position + rightDir * RayLength, Color.blue, Time.deltaTime, true);
+                curData.rightHitDis = Vector3.Distance(this.transform.position, rightHit.point) / RayLength;
             }
-            else { Debug.DrawLine(this.transform.position, this.transform.position + rightDir * 10, Color.red, Time.deltaTime, true); }
+            else { Debug.DrawLine(this.transform.position, this.transform.position + rightDir * RayLength, Color.red, Time.deltaTime, true); }
         }
-        else { Debug.DrawLine(this.transform.position, this.transform.position + rightDir * 10, Color.green, Time.deltaTime, true); }
+        else { Debug.DrawLine(this.transform.position, this.transform.position + rightDir * RayLength, Color.green, Time.deltaTime, true); }
 
         #endregion
         #region Data
@@ -123,9 +121,12 @@ public class DataRecorder : MonoBehaviour {
         curData.throttle = carController.throttle;
         curData.brake = carController.brake;
 
-        data.Add(curData);
+        if(carController.steering != 0 || carController.brake != 0 || carController.throttle != 0)
+        {
+            data.Add(curData);
+            curFrame++;
+        }
         #endregion
-        curFrame++;
     }
 
     /// <summary>

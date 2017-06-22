@@ -83,9 +83,4 @@ public class NeuralNetworkManager : MonoBehaviour
         Marshal.Copy(DataPointer, ReturnFloatArray, 0, 3);
         return ReturnFloatArray;
     }
-    public void ReleaseCompute(float[] Values)
-    {
-        NeuralNetworkAPI.ReleaseCompute(Values);
-    }
-
 }
