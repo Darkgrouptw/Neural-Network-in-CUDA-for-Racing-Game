@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: puton_bd01
+  m_Shader: {fileID: 4800000, guid: 825210053677a714ebc574009076e6b5, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: ceca075d30a2938479d197680a720b54, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ComplexTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 4d9d2209e5b46284fa62b10574657e5e, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: a046a3138b7dcb040830e76eef2957dd, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissiveTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 0e8d3044bf9056841bb965aac8ea5d8a, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _CubeIntensity
+        second: .5
+      data:
+        first:
+          name: _EmissiveValue
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .588235319, g: .588235319, b: .588235319, a: 1}

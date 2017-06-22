@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: e50c87cc970f8d7459ae0cfebd3fd9d8
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: puton_ag_alpha_01
+    100004: puton_ag_alpha_01_MeshPart0
+    100006: puton_ag_alpha_01_MeshPart1
+    100008: puton_ag_alpha_02
+    100010: puton_ag_alpha_03
+    100012: puton_ag_alpha_01_1
+    100014: puton_ag_alpha_04
+    100016: puton_ag_alpha_05
+    100018: puton_ag_alpha_06
+    100020: puton_ag_alpha_07
+    100022: puton_ag_alpha_08
+    100024: puton_ag_alpha_09
+    400000: //RootNode
+    400002: puton_ag_alpha_01
+    400004: puton_ag_alpha_01_MeshPart0
+    400006: puton_ag_alpha_01_MeshPart1
+    400008: puton_ag_alpha_02
+    400010: puton_ag_alpha_03
+    400012: puton_ag_alpha_01_1
+    400014: puton_ag_alpha_04
+    400016: puton_ag_alpha_05
+    400018: puton_ag_alpha_06
+    400020: puton_ag_alpha_07
+    400022: puton_ag_alpha_08
+    400024: puton_ag_alpha_09
+    2300000: puton_ag_alpha_01_MeshPart0
+    2300002: puton_ag_alpha_01_MeshPart1
+    2300004: puton_ag_alpha_02
+    2300006: puton_ag_alpha_03
+    2300008: puton_ag_alpha_01
+    2300010: puton_ag_alpha_01_1
+    2300012: puton_ag_alpha_04
+    2300014: puton_ag_alpha_05
+    2300016: puton_ag_alpha_06
+    2300018: puton_ag_alpha_07
+    2300020: puton_ag_alpha_08
+    2300022: puton_ag_alpha_09
+    3300000: puton_ag_alpha_01_MeshPart0
+    3300002: puton_ag_alpha_01_MeshPart1
+    3300004: puton_ag_alpha_02
+    3300006: puton_ag_alpha_03
+    3300008: puton_ag_alpha_01
+    3300010: puton_ag_alpha_01_1
+    3300012: puton_ag_alpha_04
+    3300014: puton_ag_alpha_05
+    3300016: puton_ag_alpha_06
+    3300018: puton_ag_alpha_07
+    3300020: puton_ag_alpha_08
+    3300022: puton_ag_alpha_09
+    4300000: puton_ag_alpha_01_MeshPart0
+    4300002: puton_ag_alpha_01_MeshPart1
+    4300004: puton_ag_alpha_02
+    4300006: puton_ag_alpha_03
+    4300008: puton_ag_alpha_01
+    4300010: puton_ag_alpha_01_1
+    4300012: puton_ag_alpha_04
+    4300014: puton_ag_alpha_05
+    4300016: puton_ag_alpha_06
+    4300018: puton_ag_alpha_07
+    4300020: puton_ag_alpha_08
+    4300022: puton_ag_alpha_09
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

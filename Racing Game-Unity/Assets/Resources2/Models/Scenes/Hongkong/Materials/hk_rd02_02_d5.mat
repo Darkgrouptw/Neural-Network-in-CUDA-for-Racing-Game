@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: hk_rd02_02_d5
+  m_Shader: {fileID: 4800000, guid: b7b36b313323e4b45a8fdbc45c3b5b4f, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 537c0e1d0ec36464bbba6f1c732b2018, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: d91c5ef097390fb45887b715e930cd47, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ComplexTex
+        second:
+          m_Texture: {fileID: 2800000, guid: fcfcc4a4a3b6bb0419ffc5eb85299f80, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .0503016412
+      data:
+        first:
+          name: _TintValue
+        second: 1.5535717
+      data:
+        first:
+          name: _BumpAmt
+        second: 10
+      data:
+        first:
+          name: _GlossValue
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .970588207, g: .970588207, b: .970588207, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .941176474, g: .809927166, b: .595155716, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .933823526, g: .903990388, b: .872026384, a: 1}

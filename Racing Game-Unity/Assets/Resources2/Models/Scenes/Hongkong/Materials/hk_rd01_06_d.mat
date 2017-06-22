@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: hk_rd01_06_d
+  m_Shader: {fileID: 4800000, guid: c565e0d7516af6f45948c7d272e29d74, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 81e532698a56ede488b6c6e22bd55c82, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: e58db11179e1fea4abe3406d70fa60e5, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ComplexTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 4f2d6f1739d8a2842b854ef268cf8c1b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NoiseMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 60fb889a5056eb140be5be9ae7504538, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RefMask
+        second:
+          m_Texture: {fileID: 2800000, guid: 41fe1284d7d5d1646b8ca089459c3782, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeMap
+        second:
+          m_Texture: {fileID: 8900000, guid: 94a8b6bd4297a8841b4f8d7413f9bb0d, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RefMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .0590917505
+      data:
+        first:
+          name: _TintValue
+        second: .928571403
+      data:
+        first:
+          name: _RefIntensity
+        second: .300000012
+      data:
+        first:
+          name: _CubeMapIntensity
+        second: .5
+      data:
+        first:
+          name: _GlossValue
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .360294104, g: .360294104, b: .360294104, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: .799956679, b: .488862455, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: .978904665, b: .941176474, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: .5}
