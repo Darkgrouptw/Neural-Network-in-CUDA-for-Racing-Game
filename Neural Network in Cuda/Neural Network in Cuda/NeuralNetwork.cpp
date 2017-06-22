@@ -124,10 +124,10 @@ NeuralNetworkAPI void				Train(NeuralNetwork *net, DataSet *dataArray, int dataS
 		error = 0;
 		for (int i = 0; i < dataSize; i++)
 		{
-			net->ForwardPropagate(dataArray->Values);
-			net->BackwardPropagate(dataArray->Targets);
+			net->ForwardPropagate(dataArray[i].Values);
+			net->BackwardPropagate(dataArray[i].Targets);
 
-			error += net->ComputeError(dataArray->Targets);
+			error += net->ComputeError(dataArray[i].Targets);
 		}
 		EpochsCount++;
 		error /= dataSize;
