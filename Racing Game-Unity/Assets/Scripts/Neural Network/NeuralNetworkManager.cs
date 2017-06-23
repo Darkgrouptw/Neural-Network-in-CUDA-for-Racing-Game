@@ -27,7 +27,7 @@ public class NeuralNetworkManager : MonoBehaviour
             if (!ReadTrainData())
                 return;
 
-            NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(5, 11, 3);
+            NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(5, 8, 3);
             NeuralNetworkAPI.Train(NeuralNetwork, DataSetArray.ToArray(), DataSetArray.Count);
         }
     }

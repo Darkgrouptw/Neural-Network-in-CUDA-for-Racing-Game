@@ -25,7 +25,6 @@ public class CarController : MonoBehaviour
     float throttleForDrifting;
     public float steering;
     float steerInput;
-    float unmodifedSteering;
     float lastShiftTime = -1;
     float handbrake;
 		

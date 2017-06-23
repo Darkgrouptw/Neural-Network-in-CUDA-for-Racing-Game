@@ -145,6 +145,10 @@ public class NeuralNetworkCarController : MonoBehaviour
             throttleInput = 1;
         #endregion
         #region 給值
+        float shiftThrottleFactor = Mathf.Clamp01((Time.time - lastShiftTime) / shiftSpeed);
+        drivetrain.throttle = throttle * shiftThrottleFactor;
+        drivetrain.throttleInput = throttleInput;
+
         steering = Data[0];
         throttle = Data[1];
         brake = Data[2];
