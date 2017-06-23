@@ -1,0 +1,638 @@
+fileFormatVersion: 2
+guid: 068c8b15487b0484fa8c9acd9dc1b026
+timeCreated: 1498190826
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tachometer_Function_0
+    21300002: Tachometer_Function_1
+    21300004: Tachometer_Function_2
+    21300006: Tachometer_Function_3
+    21300008: Tachometer_Function_4
+    21300010: Tachometer_Function_5
+    21300012: Tachometer_Function_6
+    21300014: Tachometer_Function_7
+    21300016: Tachometer_Function_8
+    21300018: Tachometer_Function_9
+    21300020: Tachometer_Function_10
+    21300022: Tachometer_Function_11
+    21300024: Tachometer_Function_12
+    21300026: Tachometer_Function_13
+    21300028: Tachometer_Function_14
+    21300030: Tachometer_Function_15
+    21300032: Tachometer_Function_16
+    21300034: Tachometer_Function_17
+    21300036: Tachometer_Function_18
+    21300038: Tachometer_Function_19
+    21300040: Tachometer_Function_20
+    21300042: Tachometer_Function_21
+    21300044: Tachometer_Function_22
+    21300046: Tachometer_Function_23
+    21300048: Tachometer_Function_24
+    21300050: Tachometer_Function_25
+    21300052: Tachometer_Function_26
+    21300054: Tachometer_Function_27
+    21300056: Tachometer_Function_28
+    21300058: Tachometer_Function_29
+    21300060: Tachometer_Function_30
+    21300062: Tachometer_Function_31
+    21300064: Tachometer_Function_32
+    21300066: Tachometer_Function_33
+    21300068: Tachometer_Function_34
+    21300070: Tachometer_Function_35
+    21300072: Tachometer_Function_36
+    21300074: Tachometer_Function_37
+    21300076: Tachometer_Function_38
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tachometer_Function_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 923
+        width: 156
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 923
+        width: 157
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 923
+        width: 158
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_3
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 786
+        width: 498
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_4
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 991
+        width: 96
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_5
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 967
+        width: 81
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_6
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 967
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 499
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_8
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 775
+        width: 194
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_9
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 775
+        width: 157
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_10
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 871
+        width: 81
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_11
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 830
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_12
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 830
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 499
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_14
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 655
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_15
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 775
+        width: 115
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_16
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 540
+        width: 218
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_17
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 524
+        width: 204
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_18
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 730
+        width: 82
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_19
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 644
+        width: 155
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 499
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_21
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 524
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_22
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 416
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_23
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 489
+        width: 155
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 500
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 500
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_26
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 393
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_27
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 393
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_28
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 262
+        width: 498
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 498
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_30
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 262
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_31
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 260
+        width: 498
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 500
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_33
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 131
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_34
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 131
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_35
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 131
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_36
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 0
+        width: 499
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_37
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 0
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tachometer_Function_38
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 0
+        width: 498
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
