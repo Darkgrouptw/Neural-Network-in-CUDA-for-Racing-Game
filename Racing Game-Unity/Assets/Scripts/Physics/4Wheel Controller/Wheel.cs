@@ -121,10 +121,7 @@ public class Wheel : MonoBehaviour
     // 曲線的 Curve
     [HideInInspector]
     public CurveManager CurveM;
-
-    // 畫線的 render (彈簧力， 縱向力， 側向力)
-    //public GameObject lineGameObject;
-    private LineRenderer[] lineRender = new LineRenderer[3];
+    
     public float fGroundDist;                                           // Raycast 打在地上的距離
     public bool StableOnGround = false;                                 // 輪子是否在地面上(給 Stablizer 用)
 

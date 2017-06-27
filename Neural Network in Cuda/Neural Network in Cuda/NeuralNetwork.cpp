@@ -3,7 +3,7 @@
 NeuralNetwork::NeuralNetwork(int InputSize, int HiddenSize, int OutputSize)
 {
 	// 初始化學習的數值
-	MaxEpochsCount		= 100;
+	MaxEpochsCount		= 1000;
 	LearningRate		= 0.4f;
 	Momentum			= 0.9f;
 	MinimumError		= 0.01f;

@@ -14,6 +14,8 @@ public class NeuralNetworkManager : MonoBehaviour
     public DataRecorder                             recorder;
     
     private IntPtr                                  NeuralNetwork;                                  // NeuralNetwork 的指標
+    //private List<float[]>                           FileValuesSet;                                  // File Data Set
+    //private List<float[]>  
     private List<NeuralNetworkAPI.DataSet>          DataSetArray;                                   // Data Set 的集合
 
 	private void Awake ()
@@ -27,14 +29,14 @@ public class NeuralNetworkManager : MonoBehaviour
             if (!ReadTrainData())
                 return;
 
-            NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(5, 8, 3);
+            NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(5, 11, 3);
             NeuralNetworkAPI.Train(NeuralNetwork, DataSetArray.ToArray(), DataSetArray.Count);
         }
     }
 
     private void OnDisable()
     {
-        if(!IsTraining)
+        if (!IsTraining)
             NeuralNetworkAPI.ReleaseNeuralNetwork(NeuralNetwork);
     }
 

@@ -106,7 +106,10 @@ public class NeuralNetworkCarController : MonoBehaviour
     public int SteeringLevel = 5;
 
     private CurveManager curveM;
+
+
     private NeuralNetworkManager NNManger;
+    private const int RayLength = 200;
 
     private void Start()
     {
@@ -262,10 +265,10 @@ public class NeuralNetworkCarController : MonoBehaviour
         #region 左
         Vector3 leftDir = this.transform.right * -1;
         Ray leftRay = new Ray(this.transform.position, leftDir);
-        if (Physics.Raycast(leftRay, out leftHit, 10f))
+        if (Physics.Raycast(leftRay, out leftHit, RayLength))
         {
             if (leftHit.collider.tag != "Player")
-                data.leftHitDis = Vector3.Distance(this.transform.position, leftHit.point) / 10f;
+                data.leftHitDis = Vector3.Distance(this.transform.position, leftHit.point) / RayLength;
         }
         else
             data.leftHitDis = 1;
@@ -273,10 +276,10 @@ public class NeuralNetworkCarController : MonoBehaviour
         #region 左前
         Vector3 leftfrontDir = Vector3.Lerp(this.transform.right * -1, this.transform.forward, 0.5f);
         Ray leftfrontRay = new Ray(this.transform.position, leftfrontDir);
-        if (Physics.Raycast(leftfrontRay, out leftfrontHit, 10f))
+        if (Physics.Raycast(leftfrontRay, out leftfrontHit, RayLength))
         { 
             if (leftfrontHit.collider.tag != "Player")
-                data.leftfrontHitDis = Vector3.Distance(this.transform.position, leftfrontHit.point) / 10f;
+                data.leftfrontHitDis = Vector3.Distance(this.transform.position, leftfrontHit.point) / RayLength;
         }
         else
             data.leftfrontHitDis = 1;
@@ -284,10 +287,10 @@ public class NeuralNetworkCarController : MonoBehaviour
         #region 前
         Vector3 frontDir = this.transform.forward;
         Ray frontRay = new Ray(this.transform.position, frontDir);
-        if (Physics.Raycast(frontRay, out frontHit, 10f))
+        if (Physics.Raycast(frontRay, out frontHit, RayLength))
         {
             if (frontHit.collider.tag != "Player")
-                data.frontHitDis = Vector3.Distance(this.transform.position, frontHit.point) / 10f;
+                data.frontHitDis = Vector3.Distance(this.transform.position, frontHit.point) / RayLength;
         }
         else
             data.frontHitDis = 1;
@@ -295,10 +298,10 @@ public class NeuralNetworkCarController : MonoBehaviour
         #region 右前
         Vector3 rightfrontDir = Vector3.Lerp(this.transform.forward, this.transform.right, 0.5f);
         Ray rightfrontRay = new Ray(this.transform.position, rightfrontDir);
-        if (Physics.Raycast(rightfrontRay, out rightfrontHit, 10f))
+        if (Physics.Raycast(rightfrontRay, out rightfrontHit, RayLength))
         {
             if (rightfrontHit.collider.tag != "Player")
-                data.rightfrontHitDis = Vector3.Distance(this.transform.position, rightfrontHit.point) / 10f;
+                data.rightfrontHitDis = Vector3.Distance(this.transform.position, rightfrontHit.point) / RayLength;
         }
         else
             data.rightfrontHitDis = 1;
@@ -306,10 +309,10 @@ public class NeuralNetworkCarController : MonoBehaviour
         #region 右
         Vector3 rightDir = this.transform.right;
         Ray rightRay = new Ray(this.transform.position, rightDir);
-        if (Physics.Raycast(rightRay, out rightHit, 10f))
+        if (Physics.Raycast(rightRay, out rightHit, RayLength))
         {
             if (rightHit.collider.tag != "Player")
-                data.rightHitDis = Vector3.Distance(this.transform.position, rightHit.point) / 10f;
+                data.rightHitDis = Vector3.Distance(this.transform.position, rightHit.point) / RayLength;
         }
         else
             data.rightHitDis = 1;
