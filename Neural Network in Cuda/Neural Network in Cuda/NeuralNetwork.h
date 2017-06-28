@@ -19,7 +19,7 @@ using namespace std;
 class NeuralNetwork
 {
 public:
-	NeuralNetwork(int, int, int);
+	NeuralNetwork(int, int, int, int, float, float);
 	~NeuralNetwork();
 
 	void								ForwardPropagate(float *);						// 拿到資料之後，要開始算最後的 Output Value
@@ -60,10 +60,10 @@ extern "C" NeuralNetworkAPI struct DataSet
 // 要輸出的 API
 extern "C"
 {
-	NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int, int, int);				// 產生一個 NN 的架構
-	NeuralNetworkAPI void				ReleaseNeuralNetwork(NeuralNetwork*);			// 將 Memory 清空
-	NeuralNetworkAPI void				Train(NeuralNetwork *, DataSet *, int);			// 要 Train 的資料
+	NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int, int, int, int, float, float);		// 產生一個 NN 的架構
+	NeuralNetworkAPI void				ReleaseNeuralNetwork(NeuralNetwork*);						// 將 Memory 清空
+	NeuralNetworkAPI void				Train(NeuralNetwork *, DataSet *, int);						// 要 Train 的資料
 
-	NeuralNetworkAPI float*				Compute(NeuralNetwork*, float *);				// 經過多個 Layer 之後
-	NeuralNetworkAPI void				ReleaseCompute(float *);						// 清除 Output Dark
+	NeuralNetworkAPI float*				Compute(NeuralNetwork*, float *);							// 經過多個 Layer 之後
+	NeuralNetworkAPI void				ReleaseCompute(float *);									// 清除 Output Dark
 };

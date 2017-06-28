@@ -30,7 +30,7 @@ public class NeuralNetworkAPI : MonoBehaviour
     /// <param name="OutputSize">Output Layer 的 Neural 數目</param>
     /// <returns>回傳 Neural Network 的指標</returns>
     [DllImport("Neural Network in Cuda")]
-    public static extern IntPtr CreateNeuralNetwork(int InputSize, int HiddenSize, int OutputSize);
+    public static extern IntPtr CreateNeuralNetwork(int InputSize, int HiddenSize, int OutputSize, int MaxEpochsCount, float LearningRate, float Momentum);
 
     /// <summary>
     /// 刪除 Neural Network 的指標

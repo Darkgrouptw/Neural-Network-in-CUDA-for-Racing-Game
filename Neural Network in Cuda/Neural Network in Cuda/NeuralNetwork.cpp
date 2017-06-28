@@ -1,17 +1,17 @@
 #include "NeuralNetwork.h"
 
-NeuralNetwork::NeuralNetwork(int InputSize, int HiddenSize, int OutputSize)
+NeuralNetwork::NeuralNetwork(int InputSize, int HiddenSize, int OutputSize, int MaxEpochsCount, float LearningRate, float Momentum)
 {
 	// 初始化學習的數值
-	MaxEpochsCount		= 1000;
-	LearningRate		= 0.4f;
-	Momentum			= 0.9f;
-	MinimumError		= 0.01f;
+	this->MaxEpochsCount = MaxEpochsCount;
+	this->LearningRate = LearningRate;
+	this->Momentum = Momentum;
+	MinimumError = 0.01f;
 
 	// 將值給進變數
-	this->InputSize		= InputSize;
-	this->HiddenSize	= HiddenSize;
-	this->OutputSize	= OutputSize;
+	this->InputSize = InputSize;
+	this->HiddenSize = HiddenSize;
+	this->OutputSize = OutputSize;
 
 	// 初始化三層
 	for (int i = 0; i < InputSize; i++)
@@ -82,7 +82,7 @@ float NeuralNetwork::ComputeError(float *Targets)
 //////////////////////////////////////////////////////////////////////////
 // 要輸出的 API
 //////////////////////////////////////////////////////////////////////////
-NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int InputSize, int HiddenSize, int OutputSize)
+NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int InputSize, int HiddenSize, int OutputSize, int MaxEpochsCount, float LearningRate, float Momentum)
 {
 	#ifdef  IsDebugMode
 	AllocConsole();
@@ -91,12 +91,12 @@ NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int InputSize, int HiddenSi
 	SetConsoleTitle("========== Neural Network Debug 視窗 ==========");				// 設定視窗 Title
 
 	// 把 std 的相關東西，指到視窗上面
-	freopen("conin$", "r", stdin);													
+	freopen("conin$", "r", stdin);
 	freopen("conout$", "w", stdout);
 	freopen("conout$", "w", stderr);
 	#endif // ! IsDebugMode
 
-	NeuralNetwork *net = new NeuralNetwork(InputSize, HiddenSize, OutputSize);
+	NeuralNetwork *net = new NeuralNetwork(InputSize, HiddenSize, OutputSize, MaxEpochsCount, LearningRate, Momentum);
 
 	#ifdef IsDebugMode
 	cout << "======== Neural Network ==========" << endl;
@@ -106,6 +106,7 @@ NeuralNetworkAPI NeuralNetwork*		CreateNeuralNetwork(int InputSize, int HiddenSi
 	#endif
 	return net;
 }
+
 NeuralNetworkAPI void				ReleaseNeuralNetwork(NeuralNetwork* net)
 {
 	#ifdef  IsDebugMode

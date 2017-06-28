@@ -14,8 +14,8 @@ public class NeuralNetworkManager : MonoBehaviour
     public DataRecorder                             recorder;
     
     private IntPtr                                  NeuralNetwork;                                  // NeuralNetwork 的指標
-    //private List<float[]>                           FileValuesSet;                                  // File Data Set
-    //private List<float[]>  
+    private List<float[]>                           FileValuesSet;                                  // File Data Set
+    private List<float[]>                           FileTargetSet;                                  // File Target Set
     private List<NeuralNetworkAPI.DataSet>          DataSetArray;                                   // Data Set 的集合
 
 	private void Awake ()
@@ -29,7 +29,8 @@ public class NeuralNetworkManager : MonoBehaviour
             if (!ReadTrainData())
                 return;
 
-            NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(5, 11, 3);
+            //NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(5, 11, 3);
+            NeuralNetwork = NeuralNetworkAPI.CreateNeuralNetwork(25, 53, 3, 1000, 0.4f, 0.9f);
             NeuralNetworkAPI.Train(NeuralNetwork, DataSetArray.ToArray(), DataSetArray.Count);
         }
     }
@@ -51,9 +52,17 @@ public class NeuralNetworkManager : MonoBehaviour
         }
 
         if (DataSetArray == null)
+        {
             DataSetArray = new List<NeuralNetworkAPI.DataSet>();
+            FileValuesSet = new List<float[]>();
+            FileTargetSet = new List<float[]>();
+        }
         else
+        {
             DataSetArray.Clear();
+            FileValuesSet.Clear();
+            FileTargetSet.Clear();
+        }
 
         string[] FileTextLine = File.ReadAllLines(FileName);
         for(int i = 1; i < FileTextLine.Length; i++)
@@ -71,8 +80,36 @@ public class NeuralNetworkManager : MonoBehaviour
                 Values[j] = float.Parse(EachPart[j + 1]);
             for (int j = 0; j < Targets.Length; j++)
                 Targets[j] = float.Parse(EachPart[j + 1 + Values.Length]);
-            NeuralNetworkAPI.DataSet tempDataSet = new NeuralNetworkAPI.DataSet(Values, Targets);
-            DataSetArray.Add(tempDataSet);
+            FileValuesSet.Add(Values);
+            FileTargetSet.Add(Targets);
+        }
+
+        // 把資料加進來
+        for(int i = 4; i < FileValuesSet.Count; i++)
+        {
+            float[] Values = new float[25];
+            float[] Targets = new float[3];
+            #region 把資料加進去
+            for (int j = 0; j < FileValuesSet[i - 4].Length; j++)
+                Values[j] = FileValuesSet[i][j];
+
+            for (int j = 0; j < FileValuesSet[i - 3].Length; j++)
+                Values[j + 5] = FileValuesSet[i][j];
+            
+            for (int j = 0; j < FileValuesSet[i - 2].Length; j++)
+                Values[j + 10] = FileValuesSet[i][j];
+
+            for (int j = 0; j < FileValuesSet[i - 1].Length; j++)
+                Values[j + 15] = FileValuesSet[i][j];
+
+            for (int j = 0; j < FileValuesSet[i].Length; j++)
+                Values[j + 20] = FileValuesSet[i][j];
+            
+            for (int j = 0; j < Targets.Length; j++)
+                Targets[j] = FileTargetSet[i][j];
+            #endregion
+            NeuralNetworkAPI.DataSet dataSet = new NeuralNetworkAPI.DataSet(Values, Targets);
+            DataSetArray.Add(dataSet);
         }
         return true;
     }

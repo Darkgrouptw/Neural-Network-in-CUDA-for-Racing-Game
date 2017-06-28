@@ -138,16 +138,21 @@ public class DataRecorder : MonoBehaviour {
         string delimiter = ",";
         string Header = "Number,leftHitDis,leftfrontHitDis,frontHitDis,rightfrontHitDis,rightHitDis,steering,throttle,brake\n";
         StringBuilder sBuilder = new StringBuilder();
-        for(int i=0; i < data.Count; i++)
+
+        for (int i=0; i < data.Count; i++)
         {
             Data output = data[i];
+
+            // steering 從 -1 ~1 => 0 ~ 1
+            float TempSteering = (output.steering + 1) / 2;
+
             string[] line = new string[] { output.frameNum.ToString(),
                 output.leftHitDis.ToString(),
                 output.leftfrontHitDis.ToString(),
                 output.frontHitDis.ToString(),
                 output.rightfrontHitDis.ToString(),
                 output.rightHitDis.ToString(),
-                output.steering.ToString(),
+                TempSteering.ToString(),
                 output.throttle.ToString(),
                 output.brake.ToString()
             };

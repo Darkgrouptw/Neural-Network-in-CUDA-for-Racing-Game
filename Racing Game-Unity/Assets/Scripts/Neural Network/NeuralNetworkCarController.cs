@@ -108,8 +108,13 @@ public class NeuralNetworkCarController : MonoBehaviour
     private CurveManager curveM;
 
 
+    // Neural Network 的部分
     private NeuralNetworkManager NNManger;
     private const int RayLength = 200;
+    private List<float> RayDataSet = new List<float>();
+    private int dataIndex = 0;
+    private float lastSteering = -1;
+    private const float Diff = 0.02f;
 
     private void Start()
     {
@@ -133,11 +138,44 @@ public class NeuralNetworkCarController : MonoBehaviour
 
     void Update ()
     {
+        // Apply inputs
+        foreach (Wheel w in wheels)
+        {
+            w.brake = brake;
+            w.handbrake = handbrake;
+            w.steering = steering;
+        }
+    }
+    void FixedUpdate()
+    {
         // 0 => Steering
         // 1 => Throttle
         // 2 => Brake
-        float[] Data = NNManger.Compute(RayCastData());
+        float[] InputValues = RayCastData();
+        float[] Data; // = NNManger.Compute(InputValues);
 
+        #region 判斷是否在前面五個 Frame 裡
+        for (int i = 0; i < InputValues.Length; i++)
+            RayDataSet.Add(InputValues[i]);
+
+        if (dataIndex < 4)
+        {
+            // 一開始只給加速
+            Data = new float[3];
+            Data[0] = 0;
+            Data[1] = 1;
+            Data[2] = 0;
+            dataIndex++;
+        }
+        else
+        {
+            Data = NNManger.Compute(RayDataSet.ToArray());
+
+            // 把最前面的丟掉
+            for (int i = 0; i < InputValues.Length; i++)
+                RayDataSet.RemoveAt(0);
+        }
+        #endregion
         #region Input 更改
         if (Data[0] > 0)
             steerInput = 1;
@@ -152,21 +190,23 @@ public class NeuralNetworkCarController : MonoBehaviour
         drivetrain.throttle = throttle * shiftThrottleFactor;
         drivetrain.throttleInput = throttleInput;
 
-        steering = Data[0];
+
+        //if (lastSteering == -1)
+        //{
+        //    lastSteering = Data[0] * 2 - 1;
+        //    steering = 0;
+        //}
+        //else
+        //{
+        //    steering = Mathf.Clamp(Data[0] * 2 - 1, lastSteering - Diff, lastSteering + Diff);
+        //    lastSteering = steering;
+        //}
+
+        steering = Data[0] * 2 - 1;
         throttle = Data[1];
         brake = Data[2];
-
-        // Apply inputs
-        foreach (Wheel w in wheels)
-        {
-            w.brake = brake;
-            w.handbrake = handbrake;
-            w.steering = steering;
-        }
         #endregion
-    }
-    void FixedUpdate()
-    {
+
         float velMag = GetComponent<Rigidbody>().velocity.magnitude;
         float speedMag = velMag * 3.6f;
 
