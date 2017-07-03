@@ -74,5 +74,4 @@ float Neuron::GetRandom()
 {
 	// ¿é¥X -1 ~ 1 
 	return 2.0f * rand() / RAND_MAX - 1;
-	//return 0;
 }
