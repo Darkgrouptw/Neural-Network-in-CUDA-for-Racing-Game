@@ -106,6 +106,8 @@ public class NeuralNetworkCarController : MonoBehaviour
     public int SteeringLevel = 5;
 
     private CurveManager curveM;
+    [Header("----- Neural Network Test -----")]
+    public float[] DistanceValue;
 
 
     // Neural Network 的部分
@@ -153,6 +155,7 @@ public class NeuralNetworkCarController : MonoBehaviour
         // 2 => Brake
         float[] InputValues = RayCastData();
         float[] Data; // = NNManger.Compute(InputValues);
+        DistanceValue = InputValues;
 
         #region 判斷是否在前面五個 Frame 裡
         for (int i = 0; i < InputValues.Length; i++)
@@ -202,7 +205,8 @@ public class NeuralNetworkCarController : MonoBehaviour
         //    lastSteering = steering;
         //}
 
-        steering = Data[0] * 2 - 1;
+        steering = Data[0] * 2 * 1.08f - 1;
+        //steering *= -1.12f;
         throttle = Data[1];
         brake = Data[2];
         #endregion
@@ -312,6 +316,7 @@ public class NeuralNetworkCarController : MonoBehaviour
         }
         else
             data.leftHitDis = 1;
+        Debug.DrawLine(this.transform.position, leftHit.point, Color.blue);
         #endregion
         #region 左前
         Vector3 leftfrontDir = Vector3.Lerp(this.transform.right * -1, this.transform.forward, 0.5f);
@@ -323,6 +328,7 @@ public class NeuralNetworkCarController : MonoBehaviour
         }
         else
             data.leftfrontHitDis = 1;
+        Debug.DrawLine(this.transform.position, leftfrontHit.point, Color.blue);
         #endregion
         #region 前
         Vector3 frontDir = this.transform.forward;
@@ -334,6 +340,7 @@ public class NeuralNetworkCarController : MonoBehaviour
         }
         else
             data.frontHitDis = 1;
+        Debug.DrawLine(this.transform.position, frontHit.point, Color.blue);
         #endregion
         #region 右前
         Vector3 rightfrontDir = Vector3.Lerp(this.transform.forward, this.transform.right, 0.5f);
@@ -345,6 +352,7 @@ public class NeuralNetworkCarController : MonoBehaviour
         }
         else
             data.rightfrontHitDis = 1;
+        Debug.DrawLine(this.transform.position, rightfrontHit.point, Color.blue);
         #endregion
         #region 右
         Vector3 rightDir = this.transform.right;
@@ -356,6 +364,7 @@ public class NeuralNetworkCarController : MonoBehaviour
         }
         else
             data.rightHitDis = 1;
+        Debug.DrawLine(this.transform.position, rightHit.point, Color.blue);
         #endregion
         #region 存到輸出裡面
         OutputData[0] = data.leftHitDis;

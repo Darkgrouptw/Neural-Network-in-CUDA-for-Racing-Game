@@ -1,203 +1,588 @@
 fileFormatVersion: 2
 guid: 5ba7e040e749af9458f75d015acb66b3
-timeCreated: 1498197864
-licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: HUD_0
-    21300002: HUD_1
-    21300004: HUD_2
-    21300006: HUD_3
-    21300008: HUD_4
-    21300010: HUD_5
-    21300012: HUD_6
-    21300014: HUD_7
-    21300016: HUD_8
-    21300018: HUD_9
-    21300020: HUD_10
-    21300022: HUD_11
-    21300024: HUD_12
-    21300026: HUD_13
-    21300028: HUD_14
-    21300030: HUD_15
-    21300032: HUD_16
-    21300034: HUD_17
-    21300036: HUD_18
-    21300038: HUD_19
-    21300040: HUD_20
-    21300042: HUD_21
-    21300044: HUD_22
-    21300046: HUD_23
-    21300048: HUD_24
-    21300050: HUD_25
-    21300052: HUD_26
-    21300054: HUD_27
-    21300056: HUD_28
-    21300058: HUD_29
-    21300060: HUD_30
-    21300062: HUD_31
-    21300064: HUD_32
-    21300066: HUD_33
-    21300068: HUD_34
-    21300070: HUD_35
-    21300072: HUD_36
-    21300074: HUD_37
-    21300076: HUD_38
-    21300078: HUD_39
-    21300080: HUD_40
-    21300082: HUD_41
-    21300084: HUD_42
-    21300086: HUD_43
-    21300088: HUD_44
-    21300090: HUD_45
-    21300092: HUD_46
-    21300094: HUD_47
-    21300096: HUD_48
-    21300098: HUD_49
-    21300100: HUD_50
-    21300102: HUD_51
-    21300104: HUD_52
-    21300106: HUD_53
-    21300108: HUD_54
-    21300110: HUD_55
-    21300112: HUD_56
-    21300114: HUD_57
-    21300116: HUD_58
-    21300118: HUD_59
-    21300120: HUD_60
-    21300122: HUD_61
-    21300124: HUD_62
-    21300126: HUD_63
-    21300128: HUD_64
-    21300130: HUD_65
-    21300132: HUD_66
-    21300134: HUD_67
-    21300136: HUD_68
-    21300138: HUD_69
-    21300140: HUD_70
-    21300142: HUD_71
-    21300144: HUD_72
-    21300146: HUD_73
-    21300148: HUD_74
-    21300150: HUD_75
-    21300152: HUD_76
-    21300154: HUD_77
-    21300156: HUD_78
-    21300158: HUD_79
-    21300160: HUD_80
-    21300162: HUD_81
-    21300164: HUD_82
-    21300166: HUD_83
-    21300168: HUD_84
-    21300170: HUD_85
-    21300172: HUD_86
-    21300174: HUD_87
-    21300176: HUD_88
-    21300178: HUD_89
-    21300180: HUD_90
-    21300182: HUD_91
-    21300184: HUD_92
-    21300186: HUD_93
-    21300188: HUD_94
-    21300190: HUD_95
-    21300192: HUD_96
-    21300194: HUD_97
-    21300196: HUD_98
-    21300198: HUD_99
-    21300200: HUD_100
-    21300202: HUD_101
-    21300204: HUD_102
-    21300206: HUD_103
-    21300208: HUD_104
-    21300210: HUD_105
-    21300212: HUD_106
-    21300214: HUD_107
-    21300216: HUD_108
-    21300218: HUD_109
-    21300220: HUD_110
-    21300222: HUD_111
-    21300224: HUD_112
-    21300226: HUD_113
-    21300228: HUD_114
-    21300230: HUD_115
-    21300232: HUD_116
-    21300234: HUD_117
-    21300236: HUD_118
-    21300238: HUD_119
-    21300240: HUD_120
-    21300242: HUD_121
-    21300244: HUD_122
-    21300246: HUD_123
-    21300248: HUD_124
-    21300250: HUD_125
-    21300252: HUD_126
-    21300254: HUD_127
-    21300256: HUD_128
-    21300258: HUD_129
-    21300260: HUD_130
-    21300262: HUD_131
-    21300264: HUD_132
-    21300266: HUD_133
-    21300268: HUD_134
-    21300270: HUD_135
-    21300272: HUD_136
-    21300274: HUD_137
-    21300276: HUD_138
-    21300278: HUD_139
-    21300280: HUD_140
-    21300282: HUD_141
-    21300284: HUD_142
-    21300286: HUD_143
-    21300288: HUD_144
-    21300290: HUD_145
-    21300292: HUD_146
-    21300294: HUD_147
-    21300296: HUD_148
-    21300298: HUD_149
-    21300300: HUD_150
-    21300302: HUD_151
-    21300304: HUD_152
-    21300306: HUD_153
-    21300308: HUD_154
-    21300310: HUD_155
-    21300312: HUD_156
-    21300314: HUD_157
-    21300316: HUD_158
-    21300318: HUD_159
-    21300320: HUD_160
-    21300322: HUD_161
-    21300324: HUD_162
-    21300326: HUD_163
-    21300328: HUD_164
-    21300330: HUD_165
-    21300332: HUD_166
-    21300334: HUD_167
-    21300336: HUD_168
-    21300338: HUD_169
-    21300340: HUD_170
-    21300342: HUD_171
-    21300344: HUD_172
-    21300346: HUD_173
-    21300348: HUD_174
-    21300350: HUD_175
-    21300352: HUD_176
-    21300354: HUD_177
-    21300356: HUD_178
-    21300358: HUD_179
-    21300360: HUD_180
-    21300362: HUD_181
-    21300364: HUD_182
-    21300366: HUD_183
-    21300368: HUD_184
-    21300370: HUD_185
-    21300372: HUD_186
-    21300374: HUD_187
-    21300376: HUD_188
-    21300378: HUD_189
-    21300380: HUD_190
-    21300382: HUD_191
-    21300384: HUD_192
-  serializedVersion: 4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: HUD_0
+  - first:
+      213: 21300002
+    second: HUD_1
+  - first:
+      213: 21300004
+    second: HUD_2
+  - first:
+      213: 21300006
+    second: HUD_3
+  - first:
+      213: 21300008
+    second: HUD_4
+  - first:
+      213: 21300010
+    second: HUD_5
+  - first:
+      213: 21300012
+    second: HUD_6
+  - first:
+      213: 21300014
+    second: HUD_7
+  - first:
+      213: 21300016
+    second: HUD_8
+  - first:
+      213: 21300018
+    second: HUD_9
+  - first:
+      213: 21300020
+    second: HUD_10
+  - first:
+      213: 21300022
+    second: HUD_11
+  - first:
+      213: 21300024
+    second: HUD_12
+  - first:
+      213: 21300026
+    second: HUD_13
+  - first:
+      213: 21300028
+    second: HUD_14
+  - first:
+      213: 21300030
+    second: HUD_15
+  - first:
+      213: 21300032
+    second: HUD_16
+  - first:
+      213: 21300034
+    second: HUD_17
+  - first:
+      213: 21300036
+    second: HUD_18
+  - first:
+      213: 21300038
+    second: HUD_19
+  - first:
+      213: 21300040
+    second: HUD_20
+  - first:
+      213: 21300042
+    second: HUD_21
+  - first:
+      213: 21300044
+    second: HUD_22
+  - first:
+      213: 21300046
+    second: HUD_23
+  - first:
+      213: 21300048
+    second: HUD_24
+  - first:
+      213: 21300050
+    second: HUD_25
+  - first:
+      213: 21300052
+    second: HUD_26
+  - first:
+      213: 21300054
+    second: HUD_27
+  - first:
+      213: 21300056
+    second: HUD_28
+  - first:
+      213: 21300058
+    second: HUD_29
+  - first:
+      213: 21300060
+    second: HUD_30
+  - first:
+      213: 21300062
+    second: HUD_31
+  - first:
+      213: 21300064
+    second: HUD_32
+  - first:
+      213: 21300066
+    second: HUD_33
+  - first:
+      213: 21300068
+    second: HUD_34
+  - first:
+      213: 21300070
+    second: HUD_35
+  - first:
+      213: 21300072
+    second: HUD_36
+  - first:
+      213: 21300074
+    second: HUD_37
+  - first:
+      213: 21300076
+    second: HUD_38
+  - first:
+      213: 21300078
+    second: HUD_39
+  - first:
+      213: 21300080
+    second: HUD_40
+  - first:
+      213: 21300082
+    second: HUD_41
+  - first:
+      213: 21300084
+    second: HUD_42
+  - first:
+      213: 21300086
+    second: HUD_43
+  - first:
+      213: 21300088
+    second: HUD_44
+  - first:
+      213: 21300090
+    second: HUD_45
+  - first:
+      213: 21300092
+    second: HUD_46
+  - first:
+      213: 21300094
+    second: HUD_47
+  - first:
+      213: 21300096
+    second: HUD_48
+  - first:
+      213: 21300098
+    second: HUD_49
+  - first:
+      213: 21300100
+    second: HUD_50
+  - first:
+      213: 21300102
+    second: HUD_51
+  - first:
+      213: 21300104
+    second: HUD_52
+  - first:
+      213: 21300106
+    second: HUD_53
+  - first:
+      213: 21300108
+    second: HUD_54
+  - first:
+      213: 21300110
+    second: HUD_55
+  - first:
+      213: 21300112
+    second: HUD_56
+  - first:
+      213: 21300114
+    second: HUD_57
+  - first:
+      213: 21300116
+    second: HUD_58
+  - first:
+      213: 21300118
+    second: HUD_59
+  - first:
+      213: 21300120
+    second: HUD_60
+  - first:
+      213: 21300122
+    second: HUD_61
+  - first:
+      213: 21300124
+    second: HUD_62
+  - first:
+      213: 21300126
+    second: HUD_63
+  - first:
+      213: 21300128
+    second: HUD_64
+  - first:
+      213: 21300130
+    second: HUD_65
+  - first:
+      213: 21300132
+    second: HUD_66
+  - first:
+      213: 21300134
+    second: HUD_67
+  - first:
+      213: 21300136
+    second: HUD_68
+  - first:
+      213: 21300138
+    second: HUD_69
+  - first:
+      213: 21300140
+    second: HUD_70
+  - first:
+      213: 21300142
+    second: HUD_71
+  - first:
+      213: 21300144
+    second: HUD_72
+  - first:
+      213: 21300146
+    second: HUD_73
+  - first:
+      213: 21300148
+    second: HUD_74
+  - first:
+      213: 21300150
+    second: HUD_75
+  - first:
+      213: 21300152
+    second: HUD_76
+  - first:
+      213: 21300154
+    second: HUD_77
+  - first:
+      213: 21300156
+    second: HUD_78
+  - first:
+      213: 21300158
+    second: HUD_79
+  - first:
+      213: 21300160
+    second: HUD_80
+  - first:
+      213: 21300162
+    second: HUD_81
+  - first:
+      213: 21300164
+    second: HUD_82
+  - first:
+      213: 21300166
+    second: HUD_83
+  - first:
+      213: 21300168
+    second: HUD_84
+  - first:
+      213: 21300170
+    second: HUD_85
+  - first:
+      213: 21300172
+    second: HUD_86
+  - first:
+      213: 21300174
+    second: HUD_87
+  - first:
+      213: 21300176
+    second: HUD_88
+  - first:
+      213: 21300178
+    second: HUD_89
+  - first:
+      213: 21300180
+    second: HUD_90
+  - first:
+      213: 21300182
+    second: HUD_91
+  - first:
+      213: 21300184
+    second: HUD_92
+  - first:
+      213: 21300186
+    second: HUD_93
+  - first:
+      213: 21300188
+    second: HUD_94
+  - first:
+      213: 21300190
+    second: HUD_95
+  - first:
+      213: 21300192
+    second: HUD_96
+  - first:
+      213: 21300194
+    second: HUD_97
+  - first:
+      213: 21300196
+    second: HUD_98
+  - first:
+      213: 21300198
+    second: HUD_99
+  - first:
+      213: 21300200
+    second: HUD_100
+  - first:
+      213: 21300202
+    second: HUD_101
+  - first:
+      213: 21300204
+    second: HUD_102
+  - first:
+      213: 21300206
+    second: HUD_103
+  - first:
+      213: 21300208
+    second: HUD_104
+  - first:
+      213: 21300210
+    second: HUD_105
+  - first:
+      213: 21300212
+    second: HUD_106
+  - first:
+      213: 21300214
+    second: HUD_107
+  - first:
+      213: 21300216
+    second: HUD_108
+  - first:
+      213: 21300218
+    second: HUD_109
+  - first:
+      213: 21300220
+    second: HUD_110
+  - first:
+      213: 21300222
+    second: HUD_111
+  - first:
+      213: 21300224
+    second: HUD_112
+  - first:
+      213: 21300226
+    second: HUD_113
+  - first:
+      213: 21300228
+    second: HUD_114
+  - first:
+      213: 21300230
+    second: HUD_115
+  - first:
+      213: 21300232
+    second: HUD_116
+  - first:
+      213: 21300234
+    second: HUD_117
+  - first:
+      213: 21300236
+    second: HUD_118
+  - first:
+      213: 21300238
+    second: HUD_119
+  - first:
+      213: 21300240
+    second: HUD_120
+  - first:
+      213: 21300242
+    second: HUD_121
+  - first:
+      213: 21300244
+    second: HUD_122
+  - first:
+      213: 21300246
+    second: HUD_123
+  - first:
+      213: 21300248
+    second: HUD_124
+  - first:
+      213: 21300250
+    second: HUD_125
+  - first:
+      213: 21300252
+    second: HUD_126
+  - first:
+      213: 21300254
+    second: HUD_127
+  - first:
+      213: 21300256
+    second: HUD_128
+  - first:
+      213: 21300258
+    second: HUD_129
+  - first:
+      213: 21300260
+    second: HUD_130
+  - first:
+      213: 21300262
+    second: HUD_131
+  - first:
+      213: 21300264
+    second: HUD_132
+  - first:
+      213: 21300266
+    second: HUD_133
+  - first:
+      213: 21300268
+    second: HUD_134
+  - first:
+      213: 21300270
+    second: HUD_135
+  - first:
+      213: 21300272
+    second: HUD_136
+  - first:
+      213: 21300274
+    second: HUD_137
+  - first:
+      213: 21300276
+    second: HUD_138
+  - first:
+      213: 21300278
+    second: HUD_139
+  - first:
+      213: 21300280
+    second: HUD_140
+  - first:
+      213: 21300282
+    second: HUD_141
+  - first:
+      213: 21300284
+    second: HUD_142
+  - first:
+      213: 21300286
+    second: HUD_143
+  - first:
+      213: 21300288
+    second: HUD_144
+  - first:
+      213: 21300290
+    second: HUD_145
+  - first:
+      213: 21300292
+    second: HUD_146
+  - first:
+      213: 21300294
+    second: HUD_147
+  - first:
+      213: 21300296
+    second: HUD_148
+  - first:
+      213: 21300298
+    second: HUD_149
+  - first:
+      213: 21300300
+    second: HUD_150
+  - first:
+      213: 21300302
+    second: HUD_151
+  - first:
+      213: 21300304
+    second: HUD_152
+  - first:
+      213: 21300306
+    second: HUD_153
+  - first:
+      213: 21300308
+    second: HUD_154
+  - first:
+      213: 21300310
+    second: HUD_155
+  - first:
+      213: 21300312
+    second: HUD_156
+  - first:
+      213: 21300314
+    second: HUD_157
+  - first:
+      213: 21300316
+    second: HUD_158
+  - first:
+      213: 21300318
+    second: HUD_159
+  - first:
+      213: 21300320
+    second: HUD_160
+  - first:
+      213: 21300322
+    second: HUD_161
+  - first:
+      213: 21300324
+    second: HUD_162
+  - first:
+      213: 21300326
+    second: HUD_163
+  - first:
+      213: 21300328
+    second: HUD_164
+  - first:
+      213: 21300330
+    second: HUD_165
+  - first:
+      213: 21300332
+    second: HUD_166
+  - first:
+      213: 21300334
+    second: HUD_167
+  - first:
+      213: 21300336
+    second: HUD_168
+  - first:
+      213: 21300338
+    second: HUD_169
+  - first:
+      213: 21300340
+    second: HUD_170
+  - first:
+      213: 21300342
+    second: HUD_171
+  - first:
+      213: 21300344
+    second: HUD_172
+  - first:
+      213: 21300346
+    second: HUD_173
+  - first:
+      213: 21300348
+    second: HUD_174
+  - first:
+      213: 21300350
+    second: HUD_175
+  - first:
+      213: 21300352
+    second: HUD_176
+  - first:
+      213: 21300354
+    second: HUD_177
+  - first:
+      213: 21300356
+    second: HUD_178
+  - first:
+      213: 21300358
+    second: HUD_179
+  - first:
+      213: 21300360
+    second: HUD_180
+  - first:
+      213: 21300362
+    second: HUD_181
+  - first:
+      213: 21300364
+    second: HUD_182
+  - first:
+      213: 21300366
+    second: HUD_183
+  - first:
+      213: 21300368
+    second: HUD_184
+  - first:
+      213: 21300370
+    second: HUD_185
+  - first:
+      213: 21300372
+    second: HUD_186
+  - first:
+      213: 21300374
+    second: HUD_187
+  - first:
+      213: 21300376
+    second: HUD_188
+  - first:
+      213: 21300378
+    second: HUD_189
+  - first:
+      213: 21300380
+    second: HUD_190
+  - first:
+      213: 21300382
+    second: HUD_191
+  - first:
+      213: 21300384
+    second: HUD_192
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -205,6 +590,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -213,6 +600,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -220,10 +609,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -232,49 +624,67 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: WebGL
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -290,7 +700,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_13
       rect:
@@ -303,7 +721,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_26
       rect:
@@ -316,7 +742,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_27
       rect:
@@ -329,7 +763,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_31
       rect:
@@ -342,7 +784,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_36
       rect:
@@ -355,7 +805,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_46
       rect:
@@ -368,7 +826,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_48
       rect:
@@ -381,7 +847,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_56
       rect:
@@ -394,7 +868,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_61
       rect:
@@ -407,7 +889,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_90
       rect:
@@ -420,7 +910,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 3, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4d305410000000000800000000000000
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_91
       rect:
@@ -433,7 +931,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6d305410000000000800000000000000
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_115
       rect:
@@ -446,7 +952,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 60405410000000000800000000000000
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_131
       rect:
@@ -459,7 +973,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62405410000000000800000000000000
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_132
       rect:
@@ -472,7 +994,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82405410000000000800000000000000
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_150
       rect:
@@ -485,7 +1015,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4405410000000000800000000000000
+      internalID: 21300300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_161
       rect:
@@ -498,7 +1036,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26405410000000000800000000000000
+      internalID: 21300322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_1
       rect:
@@ -511,7 +1057,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_2
       rect:
@@ -524,7 +1078,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HUD_4
       rect:
@@ -537,7 +1099,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline:
     - - {x: -928, y: -953}
       - {x: -921, y: -955}
@@ -1964,7 +2534,18 @@ TextureImporter:
       - {x: -144, y: 965}
       - {x: -144, y: 978}
       - {x: -171, y: 1004}
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
